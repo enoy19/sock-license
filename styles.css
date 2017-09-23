@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	display: border-box;
+	font-family: verdana;
+}
+
+body, html {
+	height: 100%;
+}
+
+/*body {
+	background: #f2f2f2; 
+	background: -moz-linear-gradient(top, #f2f2f2 0%, #e5e5e5 100%); 
+	background: -webkit-linear-gradient(top, #f2f2f2 0%,#e5e5e5 100%); 
+	background: linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e5e5e5',GradientType=0 );
+}*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+#id-wrapper {
+	height: 100%;
+	position: relative;
+}
+
+#id-sides-wrapper {
+	border: solid #bbbbbb 1px;
+	border-radius: 0.25cm;
+	padding: 30px;
+	
+	background-color: white;
+	
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+#id-sides-wrapper > :first-child {
+	margin-bottom: 1cm;
+}
+
+.id {
+	border: dashed 1px #00000033;
+	width: 7.6cm;
+	height: 4.9cm;
+	border-radius: 0.25cm;
+	position: relative;
+	background-image: url("sock-license-base.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+#front.id {
+	background-image: url("sock-license-front.png");
+}
+
+.id-content {
+	width: 95%;
+	height: 95%;
+	left: 2.5%;
+	top: 2.5%;
+	position: relative;
+	display: flex;
+}
+
+#front .left {
+	margin-right: 10px;
+	width: 25%;
+	height: 100%;
+	position: relative;
+}
+
+#front .right {
+	width: 75%;
+	height: 100%;
+	top: 0%;
+	position: relative;
+}
+
+#front .right table {
+	height: 100%;
+}
+
+#sock-front-top-left {
+	width: 100%;
+	top: 5%;
+	position: absolute;
+}
+
+#user-img {
+	width: 100%;
+	position: absolute;
+	top: 30%;
+	overflow:hidden;
+	border-radius: 10px;
+}
+
+table {
+	font-size: 8.5pt;
+}
+
+.small-font-size {
+	font-size: 5pt;
+}
+
+.box {
+	width: 0.20cm;
+	height: 0.20cm;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: rgba(0,0,0,0.4);
+}
+
+#back-tables-wrapper {
+	display: flex;
+}
+
+#back-tables-wrapper div + div {
+	margin-left: 20px;
+}
+
+#back-tables-wrapper img {
+	height: 20px;
+}
+
+#back-tables-wrapper {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+
+
