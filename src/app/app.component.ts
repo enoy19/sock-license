@@ -33,4 +33,8 @@ export class AppComponent {
     {title: 'test', value: 'url(../assets/images/pattern-stripes-horizontally.png)'},
     {title: 'test', value: 'url(../assets/images/pattern-stripes-vertically.png)'},
   ];
+
+  public printBtnClick() {
+    window.print();    
+  }
 }

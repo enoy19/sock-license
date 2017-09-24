@@ -1,13 +1,25 @@
+.container {
+    width: 400px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+@media print {
+    .container > *:not(app-license) {
+        display: none !important;
+    }
+}
+
 .picker-container {
     display: flex;
-    padding: 40px;
-    width: 400px;
+    padding: 40px 20px;
     justify-content: space-between;
 
     & > div {
         display: flex;
         align-items: center;
         flex-direction: column;
+        width: 33%;
     }
 }
 
@@ -17,4 +29,22 @@ label {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+button {
+    background-color: #63d;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0 none;
+    border-radius: 3px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        transform: scale(1.1);
+    }
 }

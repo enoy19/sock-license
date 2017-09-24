@@ -1,15 +1,21 @@
-<app-license></app-license>
-<div class="picker-container">
-    <div>
-        <label for="types">Types</label>
-        <app-picker [options]="types"></app-picker>
+<div class="container">
+
+    <app-license></app-license>
+    <div class="picker-container">
+        <div>
+            <label for="types">Types</label>
+            <app-picker [options]="types"></app-picker>
+        </div>
+        <div>
+            <label for="colors">Colors</label>
+            <app-picker [options]="colors"></app-picker>
+        </div>
+        <div>
+            <label for="patterns">Patterns</label>
+            <app-picker [options]="patterns"></app-picker>
+        </div>
     </div>
-    <div>
-        <label for="colors">Colors</label>
-        <app-picker [options]="colors"></app-picker>
-    </div>
-    <div>
-        <label for="patterns">Patterns</label>
-        <app-picker [options]="patterns"></app-picker>
-    </div>
+
+    <button (click)="printBtnClick()">PRINT</button>
+
 </div>
