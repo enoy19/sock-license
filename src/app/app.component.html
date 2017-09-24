@@ -1,18 +1,28 @@
 <div class="container">
 
     <app-license></app-license>
-    <div class="picker-container">
+
+    <div class="background-container">
         <div>
-            <label for="types">Types</label>
-            <app-picker [options]="types"></app-picker>
+            <h4>Type</h4>
+            <div class="property-container" *ngFor="let type of types">
+                <img class="type" [src]="type.value" [alt]="type.value">
+                <div class="checkbox"></div>
+            </div>
         </div>
         <div>
-            <label for="colors">Colors</label>
-            <app-picker [options]="colors"></app-picker>
+            <h4>Colors</h4>
+            <div class="property-container" *ngFor="let color of colors">
+                <div class="color" [style.backgroundColor]="color.value"></div>
+                <div class="checkbox"></div>
+            </div>
         </div>
         <div>
-            <label for="patterns">Patterns</label>
-            <app-picker [options]="patterns"></app-picker>
+            <h4>Patterns</h4>
+            <div class="property-container" *ngFor="let pattern of patterns">
+                <img class="pattern" [src]="pattern.value" [alt]="pattern.value">
+                <div class="checkbox"></div>
+            </div>
         </div>
     </div>
 

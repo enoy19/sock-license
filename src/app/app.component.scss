@@ -4,22 +4,49 @@
 }
 
 @media print {
-    .container > *:not(app-license) {
+    button {
         display: none !important;
     }
 }
 
-.picker-container {
+.background-container {
+    background: url('../assets/images/sock-license-base.png');
+    height: 300px;
+    width: 400px;
+    border-radius: 7px;
+    margin-bottom: 10px;
     display: flex;
-    padding: 40px 20px;
-    justify-content: space-between;
 
-    & > div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    & > * {
         width: 33%;
+        padding: 0 30px;
     }
+
+    h4 {
+        margin: 16px 0 10px;
+    }
+}
+
+.property-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color, .type, .pattern, .checkbox {
+    width: 16px;
+    height: 16px;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.color, .checkbox {
+    border: solid 2px rgba(0, 0, 0, 0.3);
+}
+
+.type, .pattern, .type + .checkbox, .pattern + .checkbox {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
 }
 
 label {
