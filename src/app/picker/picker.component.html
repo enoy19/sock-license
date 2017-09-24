@@ -1,0 +1,12 @@
+<div *ngIf="options && options.length" class="container">
+
+  <div class="picker" [class.active]="open" (click)="open = !open">
+    <div class="value" [ngStyle]="getValueStyles(options[selected].value)"></div>
+  </div>
+
+  <div *ngFor="let option of options; let i = index" class="option" 
+    [ngStyle]="getOptionStyles(i)">
+    <div class="value" [ngStyle]="getValueStyles(option.value)"></div>
+  </div>
+
+</div>

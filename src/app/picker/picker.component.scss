@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.picker, .option {
+    width: 100%;
+    height: 100%;
+    transition: all .3s cubic-bezier(.23,1,.32,1);
+
+    .value {
+        border: solid 2px rgba(0, 0, 0, 0.4);
+        transition: all .3s cubic-bezier(.08,.82,.17,1);
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+    
+    &:hover .value, &.active .value {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+.picker {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.option {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 0;
+
+    .value {
+        transform: scale(0.66);
+    }
+}

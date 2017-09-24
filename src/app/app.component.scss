@@ -1,0 +1,20 @@
+.picker-container {
+    display: flex;
+    padding: 40px;
+    width: 400px;
+    justify-content: space-between;
+
+    & > div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+label {
+    font-size: .75em;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}

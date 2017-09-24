@@ -1,0 +1,66 @@
+.container {
+    background: url('../../assets/images/sock-license-front.png');
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.left {
+    width: 30%;
+    padding: 10px;
+}
+
+.right {
+    width: 70%;
+    padding: 10px;
+}
+
+.header {
+    height: 25%;
+    display: flex;
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 0;
+        text-align: center;
+    }
+}
+
+.body {
+    display: flex;
+    flex: 1;
+
+    .right {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5% inherit;
+
+        & > div {
+            flex-basis: 50%;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    p {
+        margin-top: 0;
+    }
+}
+
+label {
+    text-transform: uppercase;
+    opacity: 0.5;
+    font-weight: bold;
+    font-size: 0.66em;
+}
+
+img {
+    width: 100%;
+}
