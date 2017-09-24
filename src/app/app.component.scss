@@ -1,6 +1,5 @@
 .container {
     width: 400px;
-    text-align: center;
     padding-top: 100px;
 }
 
@@ -29,6 +28,10 @@ label {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+.btn-container {
+    text-align: center;
 }
 
 button {

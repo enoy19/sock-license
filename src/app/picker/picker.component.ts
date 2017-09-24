@@ -33,10 +33,17 @@ export class PickerComponent implements OnInit {
     }
   }
 
-  getValueStyles(value: string) {
+  public getValueStyles(value: string) {
     return {
-      'background': value,
+      'background-image': value,
+      'background-color': value,
       'background-size': 'cover'
     };
+  }
+
+  public select(index: number) {
+    console.log(index);
+    this.selected = index;
+    this.open = false;
   }
 }

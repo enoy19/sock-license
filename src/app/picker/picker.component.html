@@ -5,7 +5,7 @@
   </div>
 
   <div *ngFor="let option of options; let i = index" class="option" 
-    [ngStyle]="getOptionStyles(i)">
+    [ngStyle]="getOptionStyles(i)" (click)="select(i)">
     <div class="value" [ngStyle]="getValueStyles(option.value)"></div>
   </div>
 
