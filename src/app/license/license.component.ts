@@ -8,9 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class LicenseComponent implements OnInit {
 
   public userImage = '../../assets/images/user.png';
+  public sockId = "00XXFFFF";
   constructor() { }
 
   ngOnInit() {
+    const prefix = this.getRandomPrefixValue();
+    const suffix = this.getRandomSuffixValue();
+    this.sockId = `${prefix}XX${suffix}`;
+  }
+
+  private getRandomPrefixValue () {
+    const prefixValues = "0123456789";
+    const rndValue = () => {
+      return prefixValues.charAt(Math.floor(Math.random() * prefixValues.length));
+    };
+    return rndValue() + rndValue();
+  }
+
+  private getRandomSuffixValue () {
+    const suffixValues = "0123456789ABCDEFG";
+    const rndValue = () => {
+      return suffixValues.charAt(Math.floor(Math.random() * suffixValues.length));
+    };
+    return rndValue() + rndValue() + rndValue() + rndValue();
   }
 
   public onUserImageDrop (event, fileInput) {
