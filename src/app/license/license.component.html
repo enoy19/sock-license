@@ -10,7 +10,10 @@
   <div class="body">
 
     <div class="left">
-      <img src="../../assets/images/user.png" alt="user">
+      <img [src]="userImage" alt="user" (click)="triggerFileUpload(file)" 
+        (drop)="onUserImageDrop($event, file)" (dragover)="$event.preventDefault()" 
+        (dragenter)="$event.preventDefault()">
+      <input type="file" #file (change)="onUserImageChange(file)">
     </div>
 
     <div class="right">
