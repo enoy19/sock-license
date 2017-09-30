@@ -1,6 +1,7 @@
 .container {
     width: 400px;
     padding-top: 100px;
+    position: relative;
 }
 
 @media print {
@@ -83,4 +84,33 @@ a {
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+
+#arrow-image {
+    left: 19%;
+    top: 40%;
+    transform: translate(-100%, -100%);
+    z-index: 1;
+}
+
+#arrow-input {
+    left: 33%;
+    top: 67%;
+    transform: translate(-100%, -100%);
+    z-index: 1;
+}
+
+#arrow-print {
+    left: 37%;
+    bottom: 20%;
+    transform: translate(-100%, 100%);
+    z-index: 1;
+
+}
+
+#arrow-fold {
+    right: 0%;
+    bottom: 67%;
+    transform: translate(100%, 100%);
+    z-index: 1;
 }
