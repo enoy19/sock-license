@@ -2,7 +2,7 @@
 
     <app-license></app-license>
 
-    <div class="background-container">
+    <app-card class="background-container">
         <div>
             <h4>Type</h4>
             <div class="property-container" *ngFor="let type of types">
@@ -24,7 +24,7 @@
                 <div class="checkbox"></div>
             </div>
         </div>
-    </div>
+    </app-card>
 
     <div class="btn-container">
         <button (click)="printBtnClick()">PRINT</button>
