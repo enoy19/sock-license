@@ -13,3 +13,15 @@ body {
     display: flex;
     justify-content: center;
 }
+
+#arrow-image p {
+    transform: translate(-30px, -190px);
+}
+
+#arrow-input p {
+    transform: translate(-30px, -30px);
+}
+
+#arrow-fold p {
+    transform: translate(20px, -30px);
+}

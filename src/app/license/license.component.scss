@@ -1,11 +1,7 @@
 .container {
-    background: url('../../assets/images/sock-license-front.png');
-    width: 400px;
-    height: 300px;
     display: flex;
     flex-direction: column;
-    border-radius: 7px;
-    margin-bottom: 10px;
+    border-bottom: dashed 2px rgba(0, 0, 0, 0.2);
 }
 
 .left {
@@ -75,4 +71,8 @@ label {
 
 img {
     width: 100%;
+}
+
+p[contenteditable] {
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
 }

@@ -1,8 +1,12 @@
 <div class="container">
 
+    <app-arrow id="arrow-image" image="../assets/images/arrows/arrow-image.png">1. Choose image!</app-arrow>
+    <app-arrow id="arrow-input" image="../assets/images/arrows/arrow-input.png">2. Enter name and expiry!</app-arrow>
     <app-license></app-license>
 
-    <div class="background-container">
+    <app-arrow id="arrow-fold" image="../assets/images/arrows/arrow-fold.png">4. Cut in and fold it here!</app-arrow>
+
+    <app-card class="background-container">
         <div>
             <h4>Type</h4>
             <div class="property-container" *ngFor="let type of types">
@@ -24,7 +28,9 @@
                 <div class="checkbox"></div>
             </div>
         </div>
-    </div>
+    </app-card>
+
+    <app-arrow id="arrow-print" image="../assets/images/arrows/arrow-print.png">3. Print it!</app-arrow>
 
     <div class="btn-container">
         <button (click)="printBtnClick()">PRINT</button>

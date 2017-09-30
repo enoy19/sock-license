@@ -1,19 +1,24 @@
 .container {
     width: 400px;
     padding-top: 100px;
+    position: relative;
 }
 
 @media print {
     button {
         display: none !important;
     }
+
+    .background-container {
+        transform: rotateX(180deg);
+    }
+
+    app-arrow {
+        display: none;
+    }
 }
 
 .background-container {
-    background: url('../assets/images/sock-license-base.png');
-    height: 300px;
-    width: 400px;
-    border-radius: 7px;
     margin-bottom: 10px;
     display: flex;
 
@@ -83,4 +88,33 @@ a {
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+
+#arrow-image {
+    left: 19%;
+    top: 40%;
+    transform: translate(-100%, -100%);
+    z-index: 1;
+}
+
+#arrow-input {
+    left: 33%;
+    top: 67%;
+    transform: translate(-100%, -100%);
+    z-index: 1;
+}
+
+#arrow-print {
+    left: 37%;
+    bottom: 20%;
+    transform: translate(-100%, 100%);
+    z-index: 1;
+
+}
+
+#arrow-fold {
+    right: 0%;
+    bottom: 67%;
+    transform: translate(100%, 100%);
+    z-index: 1;
 }
