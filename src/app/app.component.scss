@@ -7,6 +7,10 @@
     button {
         display: none !important;
     }
+
+    .background-container {
+        transform: rotateX(180deg);
+    }
 }
 
 .background-container {
