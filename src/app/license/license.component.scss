@@ -76,3 +76,7 @@ label {
 img {
     width: 100%;
 }
+
+p[contenteditable] {
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+}
